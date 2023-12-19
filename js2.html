@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body>
+    <h1>
+        MENGHITUNG KURS RUPIAH
+    </h1>
+
+    <table>
+        <tr>
+            <td>Kurs Dolar : $</td>
+            <td><input id="masuk" type="number"></td>
+        </tr>
+        <tr>
+            <td>Kurs Rupiah : Rp.</td>
+            <td id="Keluar">0</td>
+        </tr>
+        <tr>
+            <td><button onclick="kurs()">Click here!</button></td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+<script>// Kurs perhitungan dolar ke rupiah
+    function kurs(){
+        let masuk = document.getElementById("masuk").value
+        let Keluar = document.getElementById("Keluar")
+        let angka = 14650
+    
+        let perhitungan = masuk * angka
+    
+        Keluar.innerHTML = perhitungan
+    }
+</script>
+</html>
